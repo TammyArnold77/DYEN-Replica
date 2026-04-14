@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | DYEN</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ═══════════ NAV ═══════════ -->
+    <nav>
+      <div class="nav-inner">
+        <a href="index.html" class="logo-wrap" aria-label="DYEN — Home">
+          <span class="logo-text">DYEN</span>
+        </a>
+        <ul class="nav-links">
+          <li>
+            <a href="index.html" id="nl-home"
+              ><svg
+                class="nav-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+                <polyline points="9,22 9,12 15,12 15,22" /></svg
+              >home</a
+            >
+          </li>
+          <li>
+            <a href="schools.html" id="nl-schools"
+              ><svg
+                class="nav-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                <path d="M6 12v5c3 3 9 3 12 0v-5" /></svg
+              >our schools</a
+            >
+          </li>
+          <li>
+            <a href="about.html" id="nl-about"
+              ><svg
+                class="nav-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="8" r="4" />
+                <path d="M6 20v-2a6 6 0 0112 0v2" /></svg
+              >about us</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><svg
+                class="nav-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="3" y="4" width="18" height="18" rx="2" />
+                <line x1="16" y1="2" x2="16" y2="6" />
+                <line x1="8" y1="2" x2="8" y2="6" />
+                <line x1="3" y1="10" x2="21" y2="10" /></svg
+              >events</a
+            >
+          </li>
+        </ul>
+        <div class="nav-cta">
+          <a href="apply.html" class="btn btn-green">Apply Now</a>
+        </div>
+        <button
+          class="hamburger"
+          id="hamburgerBtn"
+          onclick="toggleMobile()"
+          aria-label="Open menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html"
+        ><svg
+          width="18"
+          height="18"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" /></svg
+        >Home</a
+      >
+      <a href="schools.html"
+        ><svg
+          width="18"
+          height="18"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path d="M22 10v6M2 10l10-5 10 5-10 5z" /></svg
+        >Our Schools</a
+      >
+      <a href="about.html"
+        ><svg
+          width="18"
+          height="18"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <circle cx="12" cy="8" r="4" />
+          <path d="M6 20v-2a6 6 0 0112 0v2" /></svg
+        >About Us</a
+      >
+      <a href="#"
+        ><svg
+          width="18"
+          height="18"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <rect x="3" y="4" width="18" height="18" rx="2" />
+          <line x1="16" y1="2" x2="16" y2="6" />
+          <line x1="8" y1="2" x2="8" y2="6" />
+          <line x1="3" y1="10" x2="21" y2="10" /></svg
+        >Events</a
+      >
+      <a href="apply.html" class="mob-apply">Apply Now</a>
+    </div>
+
+    <!-- ═══════════ PAGE HERO ═══════════ -->
+    <div class="about-hero">
+      <div class="about-hero-in">
+        <div class="about-hero-text">
+          <span class="section-tag">About Us</span>
+          <h1>About Us</h1>
+          <p>
+            Dyen is a network focused on giving youths FREE access to the right
+            skills, support, and confidence to build a successful future.
+          </p>
+        </div>
+        <div class="about-hero-img">
+          <!-- Replace with: <img src="about-hero.jpg" alt="DYEN students in class"> -->
+          <img src="about us.webp" alt="" />
+          <!-- <svg
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+            >
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+              <circle cx="8.5" cy="8.5" r="1.5" />
+              <path d="m21 15-5-5L5 21" />
+            </svg>
+            <span
+              >About us hero image<br />(4:3 ratio — e.g. 580 × 435 px)</span
+            > -->
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════ OUR STORY ═══════════ -->
+    <section class="story-sec">
+      <div class="container">
+        <div class="reveal">
+          <span class="section-tag">Our Story</span>
+          <h2 class="section-title">Our Story</h2>
+        </div>
+        <div class="story-wrap">
+          <div class="tl-item reveal">
+            <div class="tl-year-box">
+              <span class="tl-year">2020</span>
+              <div class="tl-dot"></div>
+            </div>
+            <div class="tl-body">
+              <h3>How It Started</h3>
+              <p>
+                In 2020, we held a free training to show young people simple
+                ways to start making money online. Surprisingly, it went well.
+                And that was when we realised there was a huge skill gap among
+                the youths — they needed to be taught the right skills to
+                succeed online. So, after much planning, we decided to start up
+                a network that gives youths full access to these skills without
+                paying hefty tuition fees: The Dominion Youth Empowerment
+                Network.
+              </p>
+            </div>
+          </div>
+
+          <div class="tl-item reveal">
+            <div class="tl-year-box">
+              <span class="tl-year">Today</span>
+              <div class="tl-dot"></div>
+            </div>
+            <div class="tl-body">
+              <h3>Where We Are Now</h3>
+              <p>
+                We've gone ahead to train more than 4,200+ youths, placed 845+
+                interns, and awarded scholarships worth more than ₦1bn. Best
+                part? Most of our students have been able to build a solid
+                career out of the skills we taught them. Some are award-winning
+                chefs who now have their own restaurant, while some have even
+                travelled abroad and are currently crushing it in the foreign
+                market.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ VISION & MISSION ═══════════ -->
+    <section class="vm-sec">
+      <div class="container">
+        <div class="reveal">
+          <span class="section-tag">Our Purpose</span>
+          <h2 class="section-title">Our Vision &amp; Mission</h2>
+        </div>
+        <div class="vm-grid">
+          <div class="vm-card reveal">
+            <div class="vm-icon">🎯</div>
+            <h3>Our Vision</h3>
+            <p>
+              To empower more youths and help them with the right skills and
+              guidance to succeed in life. No matter where they came from, or
+              what they've been through.
+            </p>
+          </div>
+          <div class="vm-card reveal">
+            <div class="vm-icon">🚀</div>
+            <h3>Our Mission</h3>
+            <p>
+              To provide tuition-free trainings, easy to consume materials, and
+              passionate tutors who will hold people by the hand till they
+              become an expert in their various fields.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ THE DYEN ADVANTAGE ═══════════ -->
+    <section class="wwd" style="padding: 5rem 0">
+      <div class="container">
+        <div class="reveal" style="text-align: center; margin-bottom: 1rem">
+          <span class="section-tag">The DYEN Advantage</span>
+          <h2 class="section-title">
+            Discover what makes our program exceptional
+          </h2>
+        </div>
+        <div class="adv-grid">
+          <div class="cando-card reveal">
+            <h3>💰 Tuition Free</h3>
+            <p>
+              Tuition fees fully covered. Nothing should stop you from creating
+              your dream future.
+            </p>
+          </div>
+          <div class="cando-card reveal">
+            <h3>🤝 Community</h3>
+            <p>
+              Surround yourself with driven, ambitious people on the same
+              journey as you.
+            </p>
+          </div>
+          <div class="cando-card reveal">
+            <h3>🏅 Expert Mentors</h3>
+            <p>
+              Get proper guidance from experienced professionals in your chosen
+              field.
+            </p>
+          </div>
+          <div class="cando-card reveal">
+            <h3>📈 High Income Skills</h3>
+            <p>Learn skills that pay the bills and set you up for life.</p>
+          </div>
+          <div class="cando-card reveal">
+            <h3>🏫 Physical Classes</h3>
+            <p>
+              Face to face, undistracted learning in an engaging classroom
+              setting.
+            </p>
+          </div>
+          <div class="cando-card reveal">
+            <h3>🌐 Networking</h3>
+            <p>
+              Build valuable connections with like-minded peers who will
+              challenge and inspire you to grow.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ FOOTER ═══════════ -->
+    <footer>
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="logo-text">DYEN</span>
+          <p>Follow Us</p>
+          <div class="social-row">
+            <a href="#" class="soc">𝕏</a><a href="#" class="soc">f</a>
+            <a href="#" class="soc">in</a><a href="#" class="soc">📸</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Schools</h4>
+          <ul>
+            <li>
+              <a href="schools.html?type=DigitalMarketing"
+                >School of Business</a
+              >
+            </li>
+            <li><a href="schools.html?type=Culinary">Culinary School</a></li>
+            <li><a href="schools.html?type=Media">Media School</a></li>
+            <li><a href="schools.html?type=Tech">Tech School</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>About us</h4>
+          <ul>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="about.html">Why DYEN</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Data Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>Copyright © 2026 Dyen</span>
+        <span>All rights reserved</span>
+      </div>
+    </footer>
+    <div id="dyen-chat-bubble">
+      <div id="dyen-chat-window">
+        <!-- Header -->
+        <div id="dyen-chat-header">
+          <div id="dyen-avatar">🌱</div>
+          <div id="dyen-header-info">
+            <h4>DYEN Assistant</h4>
+            <p>Online &mdash; Ready to help</p>
+          </div>
+        </div>
+
+        <!-- Messages -->
+        <div id="dyen-messages">
+          <div class="dyen-msg-label">DYEN Assistant</div>
+          <div class="dyen-msg bot">
+            👋 Hi there! Welcome to <strong>DYEN</strong> — Dominion Youth
+            Empowerment Network. I'm here to answer your questions about our
+            programs, schools, and how to apply. How can I help you today?
+          </div>
+        </div>
+
+        <!-- Input Bar -->
+        <div id="dyen-input-bar">
+          <input
+            id="dyen-input"
+            type="text"
+            placeholder="Ask me anything…"
+            autocomplete="off"
+          />
+          <button id="dyen-send-btn" title="Send message">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Footer -->
+        <div id="dyen-chat-footer">
+          Powered by DYEN &bull; Warri, Delta State
+        </div>
+      </div>
+
+      <!-- Toggle Button -->
+      <button id="dyen-toggle-btn" title="Chat with us">
+        <div id="dyen-unread-dot"></div>
+        <!-- Chat icon -->
+        <svg
+          class="icon-chat"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"
+          />
+        </svg>
+        <!-- Close icon -->
+        <svg
+          class="icon-close"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+          />
+        </svg>
+      </button>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

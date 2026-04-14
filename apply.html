@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apply Now | DYEN</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ═══════════ NAV ═══════════ -->
+    <nav>
+      <div class="nav-inner">
+        <a href="index.html" class="logo-wrap" aria-label="DYEN — Home">
+          <span class="logo-text">DYEN</span>
+        </a>
+        <ul class="nav-links">
+          <li>
+            <a href="index.html" id="nl-home"
+              ><svg
+                class="nav-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+                <polyline points="9,22 9,12 15,12 15,22" /></svg
+              >home</a
+            >
+          </li>
+          <li>
+            <a href="schools.html" id="nl-schools"
+              ><svg
+                class="nav-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                <path d="M6 12v5c3 3 9 3 12 0v-5" /></svg
+              >our schools</a
+            >
+          </li>
+          <li>
+            <a href="about.html" id="nl-about"
+              ><svg
+                class="nav-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="8" r="4" />
+                <path d="M6 20v-2a6 6 0 0112 0v2" /></svg
+              >about us</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><svg
+                class="nav-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="3" y="4" width="18" height="18" rx="2" />
+                <line x1="16" y1="2" x2="16" y2="6" />
+                <line x1="8" y1="2" x2="8" y2="6" />
+                <line x1="3" y1="10" x2="21" y2="10" /></svg
+              >events</a
+            >
+          </li>
+          <!-- Apply Now is highlighted as a separate nav item on this page -->
+          <li><a href="apply.html" id="nl-apply">Apply Now</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a href="apply.html" class="btn btn-green">Apply Now</a>
+        </div>
+        <button
+          class="hamburger"
+          id="hamburgerBtn"
+          onclick="toggleMobile()"
+          aria-label="Open menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html"
+        ><svg
+          width="18"
+          height="18"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" /></svg
+        >Home</a
+      >
+      <a href="schools.html"
+        ><svg
+          width="18"
+          height="18"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path d="M22 10v6M2 10l10-5 10 5-10 5z" /></svg
+        >Our Schools</a
+      >
+      <a href="about.html"
+        ><svg
+          width="18"
+          height="18"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <circle cx="12" cy="8" r="4" />
+          <path d="M6 20v-2a6 6 0 0112 0v2" /></svg
+        >About Us</a
+      >
+      <a href="#"
+        ><svg
+          width="18"
+          height="18"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <rect x="3" y="4" width="18" height="18" rx="2" />
+          <line x1="16" y1="2" x2="16" y2="6" />
+          <line x1="8" y1="2" x2="8" y2="6" />
+          <line x1="3" y1="10" x2="21" y2="10" /></svg
+        >Events</a
+      >
+      <a href="apply.html" class="mob-apply">Apply Now</a>
+    </div>
+
+    <!-- ═══════════ PAGE HERO ═══════════ -->
+    <div class="apply-hero">
+      <div class="inner">
+        <span class="section-tag">Admissions</span>
+        <h1>Apply Now</h1>
+        <p>
+          Applications are free and open to all Nigerian youth. No prior
+          experience needed — just drive, passion, and willingness to show up.
+        </p>
+        <a href="#formSec" class="btn btn-green">Begin Application ↓</a>
+      </div>
+    </div>
+
+    <!-- ═══════════ HOW TO APPLY ═══════════ -->
+    <section class="apply-steps">
+      <div class="container">
+        <div class="reveal">
+          <span class="section-tag">Process</span>
+          <h2 class="section-title">How to Apply</h2>
+        </div>
+        <div class="steps-row">
+          <div class="step-card reveal">
+            <div class="step-num-circle">1</div>
+            <h4>Fill the Application</h4>
+            <p>
+              Complete the simple form below. It takes less than 5 minutes. No
+              documents needed to start.
+            </p>
+          </div>
+          <div class="step-card reveal">
+            <div class="step-num-circle">2</div>
+            <h4>Review &amp; Selection</h4>
+            <p>
+              Our admissions team reviews your application. Selected candidates
+              are contacted within 2 weeks.
+            </p>
+          </div>
+          <div class="step-card reveal">
+            <div class="step-num-circle">3</div>
+            <h4>Begin Your Training</h4>
+            <p>
+              Receive your scholarship letter and class schedule. Show up and
+              transform your life — completely free.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ APPLICATION FORM ═══════════ -->
+    <section class="apply-form-sec" id="formSec">
+      <div class="container">
+        <div class="reveal" style="text-align: center; margin-bottom: 3rem">
+          <span class="section-tag">Application</span>
+          <h2 class="section-title">Apply for a Scholarship</h2>
+        </div>
+
+        <div class="form-card reveal">
+          <!-- Form fields (hidden on success) -->
+          <div id="formBody">
+            <div class="form-card-title">Your Information</div>
+            <p class="form-card-sub">
+              All fields are required. Your information is safe with us.
+            </p>
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label class="form-label" for="firstName">First Name</label>
+                <input
+                  class="form-control"
+                  id="firstName"
+                  type="text"
+                  placeholder="e.g. Chukwuemeka"
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="lastName">Last Name</label>
+                <input
+                  class="form-control"
+                  id="lastName"
+                  type="text"
+                  placeholder="e.g. Okafor"
+                />
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label class="form-label" for="email">Email Address</label>
+                <input
+                  class="form-control"
+                  id="email"
+                  type="email"
+                  placeholder="yourname@email.com"
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="phone">Phone Number</label>
+                <input
+                  class="form-control"
+                  id="phone"
+                  type="tel"
+                  placeholder="08012345678"
+                />
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label class="form-label" for="age">Age</label>
+                <input
+                  class="form-control"
+                  id="age"
+                  type="number"
+                  min="16"
+                  max="35"
+                  placeholder="e.g. 22"
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="state">State of Origin</label>
+                <select class="form-control" id="state">
+                  <option value="">Select State</option>
+                  <option>Delta State</option>
+                  <option>Lagos State</option>
+                  <option>Rivers State</option>
+                  <option>Anambra State</option>
+                  <option>Imo State</option>
+                  <option>Edo State</option>
+                  <option>Bayelsa State</option>
+                  <option>Cross River State</option>
+                  <option>Akwa Ibom State</option>
+                  <option>Ogun State</option>
+                  <option>Oyo State</option>
+                  <option>Enugu State</option>
+                  <option>Abia State</option>
+                  <option>Ebonyi State</option>
+                  <option>Kano State</option>
+                  <option>Kaduna State</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label class="form-label" for="school">School of Choice</label>
+                <select class="form-control" id="school">
+                  <option value="">Select a School</option>
+                  <option>School of Business</option>
+                  <option>School of Tech</option>
+                  <option>School of Media</option>
+                  <option>School of Culinary</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="education"
+                  >Highest Education Level</label
+                >
+                <select class="form-control" id="education">
+                  <option value="">Select</option>
+                  <option>Secondary School (SSCE)</option>
+                  <option>OND / NCE</option>
+                  <option>HND / B.Sc.</option>
+                  <option>Postgraduate</option>
+                  <option>No formal education</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="motivation"
+                >Why do you want to join DYEN?</label
+              >
+              <textarea
+                class="form-control"
+                id="motivation"
+                placeholder="Share your motivation and what you hope to achieve through this program..."
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="experience"
+                >Prior experience in your chosen field?</label
+              >
+              <select class="form-control" id="experience">
+                <option value="">Select</option>
+                <option>No experience at all</option>
+                <option>A little (self-taught)</option>
+                <option>Some formal training</option>
+                <option>Intermediate level</option>
+              </select>
+            </div>
+
+            <button class="btn btn-green form-submit" onclick="submitApp()">
+              Submit Application →
+            </button>
+          </div>
+
+          <!-- Success state (shown after submit) -->
+          <div class="success-state" id="successMsg">
+            <div class="success-icon">✓</div>
+            <h3>Application Submitted!</h3>
+            <p>
+              Thank you for applying to DYEN. Our admissions team will review
+              your application and get back to you within 2 weeks via email or
+              phone. Keep an eye on your inbox.
+            </p>
+            <a
+              href="index.html"
+              class="btn btn-green-outline"
+              style="margin-top: 1.5rem"
+              >Back to Home</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ FAQ ═══════════ -->
+    <section class="faq-sec">
+      <div class="container">
+        <div class="reveal" style="text-align: center">
+          <span class="section-tag">FAQ</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item reveal">
+            <div class="faq-q">
+              Is the training really free?
+              <div class="faq-ic">+</div>
+            </div>
+            <div class="faq-a">
+              Yes, completely free. DYEN covers all tuition costs through
+              scholarships. You will never be asked to pay for your training.
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <div class="faq-q">
+              Who is eligible to apply?
+              <div class="faq-ic">+</div>
+            </div>
+            <div class="faq-a">
+              Any Nigerian youth between 16 and 35 years old can apply. No prior
+              experience is required — just passion and commitment to show up.
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <div class="faq-q">
+              Where are classes held?
+              <div class="faq-ic">+</div>
+            </div>
+            <div class="faq-a">
+              Classes are currently held physically in Warri, Delta State. We
+              believe strongly in the power of face-to-face learning.
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <div class="faq-q">
+              How long does each program last?
+              <div class="faq-ic">+</div>
+            </div>
+            <div class="faq-a">
+              Programs range from 2 to 4 months depending on the course. You
+              will receive a detailed schedule upon admission.
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <div class="faq-q">
+              Will I get a certificate at the end?
+              <div class="faq-ic">+</div>
+            </div>
+            <div class="faq-a">
+              Yes! Students who complete the program and meet attendance
+              requirements receive an official DYEN certificate of completion.
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <div class="faq-q">
+              What happens after the program?
+              <div class="faq-ic">+</div>
+            </div>
+            <div class="faq-a">
+              DYEN supports graduates through internship placements and
+              networking events to help you connect with employers, clients, and
+              fellow graduates.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ FOOTER ═══════════ -->
+    <footer>
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="logo-text">DYEN</span>
+          <p>Follow Us</p>
+          <div class="social-row">
+            <a href="#" class="soc">𝕏</a><a href="#" class="soc">f</a>
+            <a href="#" class="soc">in</a><a href="#" class="soc">📸</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Schools</h4>
+          <ul>
+            <li>
+              <a href="schools.html?type=DigitalMarketing"
+                >School of Business</a
+              >
+            </li>
+            <li><a href="schools.html?type=Culinary">Culinary School</a></li>
+            <li><a href="schools.html?type=Media">Media School</a></li>
+            <li><a href="schools.html?type=Tech">Tech School</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>About us</h4>
+          <ul>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="about.html">Why DYEN</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Data Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>Copyright © 2026 Dyen</span>
+        <span>All rights reserved</span>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
